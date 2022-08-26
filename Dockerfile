@@ -7,3 +7,4 @@ RUN cp -rvf templatemo_560_astro_motion/* .
 RUN rm -Rf astro-motion.zip templatemo_560_astro_motion/
 CMD ["/usr/sbin/httpd", "-D","FOREGROUND"]
 EXPOSE 80
+ 
