@@ -1,7 +1,5 @@
 FROM centos:latest
-RUN yum install -y httpd \ 
-zip \
-unzip
+RUN yum -y install httpd; yum clean all; systemctl enable httpd.service
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page282/astro-motion.zip 
 WORKDIR /apps
 RUN unzip astro-motion.zip
