@@ -1,3 +1,3 @@
 FROM httpd
 COPY . /usr/local/apache2/htdocs/
-EXOPSE 8000
+EXPOSE 8000
